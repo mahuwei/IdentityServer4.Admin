@@ -1,11 +1,11 @@
 ﻿{
     "Serilog": {
-        "MinimumLevel": {
-            "Default": "Error",
-            "Override": {
-                "Skoruba": "Information"
-            }
-        },
+      "MinimumLevel": {
+        "Default": "Debug",
+        "Override": {
+          "Skoruba": "Information"
+        }
+      },
         "WriteTo": [
             {
                 "Name": "Console"
@@ -20,7 +20,7 @@
             {
                 "Name": "MSSqlServer",
                 "Args": {
-                    "connectionString": "Server=(localdb)\\mssqllocaldb;Database=IdentityServer4Admin;Trusted_Connection=True;MultipleActiveResultSets=true",
+                    "connectionString": "Data Source=192.168.1.200;Initial Catalog=IdentityServer4Admin2;Integrated Security=False;User ID=sa;Password=estep;Connect Timeout=60;MultipleActiveResultSets=true;",
                     "tableName": "Log",
                     "columnOptionsSection": {
                         "addStandardColumns": [ "LogEvent" ],
